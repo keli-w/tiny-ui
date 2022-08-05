@@ -1,0 +1,10 @@
+{
+  "format": 2,
+  "miniprogramRoot": "demo",
+  "compileOptions": {
+    "less": true,
+    "component2": true,
+    "enableNodeModuleBabelTransform": true
+  },
+  "uploadExclude": ["dist/**/*"]
+}

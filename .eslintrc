@@ -1,0 +1,27 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "requireConfigFile": false
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "my": true,
+    "App": true,
+    "Component": true,
+    "Page": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "indent": ["error", 2]
+  }
+}

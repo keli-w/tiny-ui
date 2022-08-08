@@ -1,6 +1,6 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": ["pages/circle/index"],
   "window": {
-    "defaultTitle": "My App"
+    "defaultTitle": "tiny-ui"
   }
 }

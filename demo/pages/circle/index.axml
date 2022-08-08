@@ -1,0 +1,52 @@
+<view class='container'>
+  <demo-block title="动画">
+    <view class="circle-container">
+      <circle duration="{{duration}}" percent='{{percent}}' active='{{openActive}}'></circle>
+    </view>
+  </demo-block>
+
+  <demo-block title="基本使用">
+    <view class="circle-container">
+      <circle percent='{{percent}}' showValue='{{true}}'></circle>
+    </view>
+    <view class="button_list">
+      <button plain="{{true}}" onTap="add">增加进度</button>
+      <button plain="{{true}}" onTap="min">减少进度</button>
+    </view>
+  </demo-block>
+
+  <demo-block title="更改内外直径">
+    <view class="circle-container">
+      <circle percent='60' outer-diameter='{{outerDiameter}}' inner-diameter='{{innerDiameter}}'></circle>
+    </view>
+    <view class="button_list" style="margin-top:30rpx">
+      <button plain="{{true}}" onTap="addOuter">增加外径</button>
+      <button plain="{{true}}" onTap="minOuter">减少外径</button>
+    </view>
+    <view class="button_list">
+      <button plain="{{true}}" onTap="addInner">增加内经</button>
+      <button plain="{{true}}" onTap="minInner">减少内经</button>
+    </view>
+  </demo-block>
+
+  <demo-block title="更改颜色">
+    <view class="circle-container">
+      <circle percent='60' show-value='{{true}}' active-color='{{activeColor}}' background-color='{{backgroundColor}}' inner-color='{{innerColor}}' value-color='{{valueColor}}'></circle>
+    </view>
+    <view class="button_list">
+      <button plain="{{true}}" onTap="random">随机颜色</button>
+      <button plain="{{true}}" onTap="openCloseActive">刷新页面</button>
+    </view>
+  </demo-block>
+
+  <demo-block title="自定义中间背景区域">
+    <view class="circle-container">
+      <circle percent='60' active-color='black'>
+        <image src="{{backgroundImage}}" style="width:140rpx;height:140rpx;border-radius:50%;display:block;" />
+      </circle>
+    </view>
+    <view class="button_list">
+      <button plain="{{true}}" onTap="change">换一张背景</button>
+    </view>
+  </demo-block>
+</view>

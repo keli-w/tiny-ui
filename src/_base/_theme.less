@@ -1,0 +1,14 @@
+// 设计标注的尺寸是 750px 下的 2x 尺寸，正常使用都需要除以 2
+// 兼容蚂蚁现有的高清方案
+@hd: 1px;
+@pixelSize: 0.5 * @hd;
+
+// 主题色
+@theme-color: #1677ff;
+
+//数字(数字常规字号跟文字一样，以下为特殊场景使用)
+@font-family-alipay-number: DIN PRO;
+@font-size-amount-core: 110 * @pixelSize; //核心大金额
+@font-size-amount-largenumber: 90 * @pixelSize; //大数字金额
+@font-size-amount-large: 60 * @pixelSize; //大金额
+@font-size-number-keyboard: 50 * @pixelSize; //数字键盘

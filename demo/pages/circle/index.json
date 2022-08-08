@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "demo-block": "../../components/DemoBlock/index",
+    "circle": "../../../src/circle/index"
+  }
+}

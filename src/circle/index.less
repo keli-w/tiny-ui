@@ -1,0 +1,44 @@
+@import '../_base/_base.less';
+
+.sector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.sx1,
+.sx2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sx1 {
+  z-index: 1;
+}
+
+.sx2 {
+  z-index: 2;
+}
+
+.sx_t {
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.sector1 {
+  background: @progress-active-color;
+}
+
+.sector2 .sx1,
+.sector2 .sx2 {
+  background: @progress-active-color;
+  transform: rotate(180deg);
+}
